@@ -1,4 +1,4 @@
-const SUPABASE_URL = 'https://brxmhlkdohphskgvacix.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://brxmhlkdohphskgvacix.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJyeG1obGtkb2hwaHNrZ3ZhY2l4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY5NzEwMzAsImV4cCI6MjEwMjU0NzAzMH0.oRNktFkVLN6Qlc3X0icmeg4w-sgfhXnhJK-yfMpHncE';
 
 const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
@@ -16,7 +16,7 @@ async function createNote() {
     }
 
     const { error } = await _supabase
-        .from('notes');
+        .from('notes')
         .insert([{content: text}]);
 
     if (error) {
