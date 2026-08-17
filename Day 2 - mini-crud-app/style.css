@@ -1,0 +1,75 @@
+/* Reset basic margins and set clean font */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center everything on the screen */
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* White card container */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #222222;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+/* Input and button container */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Styled text input box */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+/* Highlight border when clicking inside the input box */
+input[type="text"]:focus {
+    border-color: #3ecf8e;
+}
+
+/* Styled action button */
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #3ecf8e;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Darken button on hover */
+button:hover {
+    background-color: #2eab73;
+}
